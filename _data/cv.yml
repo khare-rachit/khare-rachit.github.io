@@ -1,0 +1,85 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Rachit Khare
+    - name: Date of Birth
+      value: 14th April 1989
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D.
+      department: Department of Chemical Engineering and Materials Science
+      institution: University of Minnesota, Minneapolis, USA
+      year: 2011 - 2016
+    - title: B. Tech.
+      department: Department of Chemical Engineering
+      institution: Indian Institute of Technology Roorkee, Roorkee, India
+      year: 2007 - 2011
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Group Leader
+      department: Chair II of Technical Chemistry
+      institution: Technical University of Munich, Garching, Germany
+      year: 2021 - 
+    - title: Postdoctoral Researcher
+      department: Chair II of Technical Chemistry
+      institution: Technical University of Munich, Garching, Germany
+      year: 2017 - 2020
+    - title: Research Assistant
+      department: Department of Chemical Engineering and Materials Science
+      institution: University of Minnesota, Minneapolis, Switzerland
+      year: 2011 - 2016
+
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Industrial Chemical Processes II
+      role: Lecturer
+      institution: Technical University of Munich, Garching, Germany
+      year: 2022 -
+    - title: Characterization of Acid/Base sites in Methods of Catalysis
+      role: Lecturer
+      institution: Technical University of Munich, Garching, Germany
+      year: 2021 - 2022
+    - title: Technical Chemistry Internship
+      role: Lab Superviser
+      institution: Technical University of Munich, Garching, Germany
+      year: 2017 - 2019
+    - title: Physical and Chemical Thermodynamics
+      role: Teaching Assistant
+      institution: University of Minnesota, Minneapolis, USA
+      year: 2014
+    - title: Chemical Engineering Design
+      role: Teaching Assistant
+      institution: University of Minnesota, Minneapolis, USA
+      year: 2014
+    - title: Reaction Kinetics and Reactor Design
+      role: Teaching Assistant
+      institution: University of Minnesota, Minneapolis, USA
+      year: 2012
+
+- title: Professional Activities
+  type: nested_list
+  contents:
+    - title: Reviewed Journals
+      items: 
+        - Journal of Catalysis
+        - ACS Catalysis
+        - Applied Catalysis A - General
+        - Applied Catalysis B - Environmental
+        - Industrial & Engineering Chemistry Research
+        - Microporous and Mesoporous Materials
+        - Catalysis Communications
+    - title: Reviewed Conferences
+      items:
+        - North American Catalysis Society Meeting
+
+- title: Skills
+  type: list
+  contents:
+    - <b>Programming:</b> Python ∙ Matlab ∙ SQL ∙ HTML
+    - <b>Quantum Chemistry Packages:</b> Orca ∙ Quantum Espresso ∙ CP2K ∙ NWChem

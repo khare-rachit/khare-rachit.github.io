@@ -1,0 +1,10 @@
+- presentation:
+    title: Single Ni ions hosted in zeolites as active sites for selective dimerization of butenes
+    author: Laura Löbbert, Rachit Khare, Maricruz Sanchez-Sanchez, Johannes A. Lercher
+    event: 20th International Zeolite Conference, Valencia (Spain)
+    date: 07/2022
+    comment: This is some comment text that can do _Markdown_
+- presentation:
+    title: A second presentation
+    event: Another conference
+    date: 03/2022
