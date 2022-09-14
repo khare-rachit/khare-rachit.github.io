@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://khare-rachit.github.io//sitemap.xml
+Sitemap: khare-rachit.github.io//sitemap.xml
