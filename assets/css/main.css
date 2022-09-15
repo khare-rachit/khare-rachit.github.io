@@ -212,6 +212,48 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .projects h2.category { color: var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); padding-top: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: right; }
 
+.presentations { margin-top: 2rem; }
+
+.presentations ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
+
+.presentations ol.bibliography li { margin-bottom: 1rem; }
+
+.presentations ol.bibliography li .logo { max-height: 75px; max-width: 100%; }
+
+.presentations ol.bibliography li .title { font-weight: bolder; font-size: 1rem; }
+
+.presentations ol.bibliography li .author { font-size: 0.75rem; }
+
+.presentations ol.bibliography li .author a { border-bottom: 1px dashed var(--global-theme-color); }
+
+.presentations ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
+
+.presentations ol.bibliography li .author > em { font-style: normal; color: var(--global-highlight-color); }
+
+.presentations ol.bibliography li .awards { font-size: 0.8rem; }
+
+.presentations ol.bibliography li .awards a { border-bottom: 1px dashed var(--global-theme-color); }
+
+.presentations ol.bibliography li .awards a:hover { border-bottom-style: solid; text-decoration: none; }
+
+.presentations ol.bibliography li .conference { font-size: 0.9rem; }
+
+.presentations ol.bibliography li .links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; }
+
+.presentations ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+
+.presentations ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; transition-property: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.presentations ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
+
+.presentations ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+
+.presentations ol.bibliography li .hidden.open { max-height: 100em; transition-property: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.presentations ol.bibliography li div.abstract.hidden { border: dashed 1px var(--global-bg-color); }
+
+.presentations ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
+
 .publications { margin-top: 2rem; }
 
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
