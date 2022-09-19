@@ -1,6 +1,6 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
 /******************************************************************************* Themes */
-:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(189, 82, 184, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #bd52b8; --global-hover-color: #bd52b8; --global-footer-bg-color: #1C1C1D; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; --global-divider-color: rgba(0,0,0,.1); --global-card-bg-color: #ffffff; --global-highlight-color: #0076df; }
+:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(189, 82, 184, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #bd52b8; --global-hover-color: #bd52b8; --global-footer-bg-color: #1C1C1D; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; --global-divider-color: rgba(0,0,0,.1); --global-card-bg-color: #ffffff; --global-highlight-color: #0076df; --global-carousel-color: #828282; --global-carousel-highlight-color: grey; }
 
 :root .fa-sun { display: none; }
 
@@ -10,7 +10,7 @@
 
 :root .repo-img-dark { display: none; }
 
-html[data-theme='dark'] { --global-bg-color: #1C1C1D; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-hover-color: #2698BA; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #1C1C1D; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; --global-divider-color: #424246; --global-card-bg-color: #212529; --global-highlight-color: #bd52b8; }
+html[data-theme='dark'] { --global-bg-color: #1C1C1D; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-hover-color: #2698BA; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #1C1C1D; --global-footer-link-color: #000000; --global-distill-app-color: #e8e8e8; --global-divider-color: #424246; --global-card-bg-color: #212529; --global-highlight-color: #bd52b8; --global-carousel-color: #e8e8e8; --global-carousel-highlight-color: white; }
 
 html[data-theme='dark'] .fa-sun { padding-left: 10px; padding-top: 12px; display: block; }
 
@@ -69,6 +69,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .card .card-item .row { display: flex; align-items: center; }
 
 .citation, .citation-number { color: var(--global-theme-color); }
+
+article.main_article { margin-top: 1rem; }
 
 .profile { margin-left: 1rem; width: 100%; }
 
@@ -152,7 +154,17 @@ footer.fixed-bottom a { color: var(--global-footer-link-color); }
 
 footer.fixed-bottom a:hover { color: var(--global-theme-color); text-decoration: none; }
 
-footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); padding-top: 40px; padding-bottom: 40px; font-size: 0.9rem; }
+footer.sticky-bottom { background-color: var(--global-footer-bg-color); border-top: 1px solid var(--global-divider-color); padding-top: 0px; padding-bottom: 0px; font-size: 1.2rem; }
+
+footer.sticky-bottom .container { color: var(--global-footer-text-color); padding-top: 9px; padding-bottom: 8px; text-align: left; }
+
+footer.sticky-bottom .container .contact { color: var(--global-footer-text-color); margin-bottom: 5px; margin-top: 5px; font-size: 1.2rem; }
+
+footer.sticky-bottom .container .contact p { color: var(--global-footer-text-color); margin: 0; font-size: 0.9rem; }
+
+footer.sticky-bottom .container .contact a { color: var(--global-footer-link-color); }
+
+footer.sticky-bottom .container .contact a:hover { color: var(--global-theme-color); text-decoration: none; }
 
 .cv { margin-bottom: 40px; }
 
@@ -212,15 +224,27 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .projects h2.category { color: var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); padding-top: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: right; }
 
+.carousel-control-prev { left: -10px; color: var(--global-carousel-color); }
+
+.carousel-control-prev:hover { color: var(--global-carousel-highlight-color); text-decoration: none; }
+
+.carousel-control-next { right: -10px; color: var(--global-carousel-color); }
+
+.carousel-control-next:hover { color: var(--global-carousel-highlight-color); text-decoration: none; }
+
+.carousel .carousel-indicators li { background-color: var(--global-carousel-color); }
+
+.carousel .carousel-indicators li.active { background-color: var(--global-carousel-highlight-color); }
+
 .presentations { margin-top: 2rem; }
 
 .presentations ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
-.presentations ol.bibliography li { margin-bottom: 1rem; }
+.presentations ol.bibliography li { margin-bottom: 1rem; border-top: 1px solid var(--global-divider-color); }
 
 .presentations ol.bibliography li .logo { max-height: 75px; max-width: 100%; }
 
-.presentations ol.bibliography li .title { font-weight: bolder; font-size: 1rem; }
+.presentations ol.bibliography li .title { margin-top: 1rem; font-weight: bolder; font-size: 1rem; }
 
 .presentations ol.bibliography li .author { font-size: 0.75rem; }
 
@@ -238,6 +262,8 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .presentations ol.bibliography li .conference { font-size: 0.9rem; }
 
+.presentations ol.bibliography li .location { font-size: 0.8rem; }
+
 .presentations ol.bibliography li .links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; }
 
 .presentations ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
@@ -254,21 +280,19 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .presentations ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
+#pubdivider { border-color: var(--global-divider-color) !important; }
+
 .publications { margin-top: 2rem; }
-
-.publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
-
-.publications h2 { margin-bottom: 1rem; }
-
-.publications h2 span { font-size: 1.5rem; }
-
-.publications h2.year { color: var(--global-theme-color); border-top: 1px solid var(--global-divider-color); padding-top: 1rem; margin-top: 2rem; margin-bottom: -2rem; text-align: right; }
 
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
 .publications ol.bibliography li { margin-bottom: 1rem; }
 
-.publications ol.bibliography li .preview { max-height: 200px; max-width: 90%; }
+.publications ol.bibliography li .row { border-bottom-color: var(--global-theme-color); }
+
+.publications ol.bibliography li .preview { max-height: 200px; max-width: 90%; margin-bottom: 1rem; }
+
+.publications ol.bibliography li .sel_preview { margin-top: 1rem; max-height: 200px; max-width: 90%; margin-bottom: 2rem; }
 
 .publications ol.bibliography li .abbr { height: 2rem; margin-bottom: 0.5rem; }
 
@@ -294,6 +318,12 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .publications ol.bibliography li .author > span.more-authors:hover { color: var(--global-text-color); border-bottom: 1px dashed var(--global-text-color); }
 
+.publications ol.bibliography li .keywords { font-size: 0.9rem; padding-left: 0.1rem; }
+
+.publications ol.bibliography li .keywords a { color: var(--global-theme-color); }
+
+.publications ol.bibliography li .keywords a:hover { border-bottom: 1px solid var(--global-theme-color); text-decoration: none; }
+
 .publications ol.bibliography li .periodical { font-size: 0.9rem; }
 
 .publications ol.bibliography li .awards { font-size: 0.8rem; }
@@ -301,8 +331,6 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 .publications ol.bibliography li .awards a { border-bottom: 1px dashed var(--global-theme-color); }
 
 .publications ol.bibliography li .awards a:hover { border-bottom-style: solid; text-decoration: none; }
-
-.publications ol.bibliography li .conference { font-size: 0.9rem; }
 
 .publications ol.bibliography li .links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; }
 
@@ -331,6 +359,12 @@ code { color: var(--global-theme-color); background-color: var(--global-code-bg-
 html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 750ms !important; transition-delay: 0 !important; }
 
 .post .post-meta { color: var(--global-text-color-light); font-size: 0.875rem; margin-bottom: 0; }
+
+.post .tag-list { text-align: center; padding-top: 1rem; }
+
+.post .tag-list ul { justify-content: center; display: flow-root; }
+
+.post .tag-list ul p, .post .tag-list ul li { list-style: none; display: inline-block; padding: 0rem 0.5rem; color: var(--global-highlight-color); }
 
 .post .post-tags { color: var(--global-text-color-light); font-size: 0.875rem; padding-top: 0.25rem; padding-bottom: 1rem; }
 
